@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="simple-grid.css" rel="stylesheet" type="text/css">
+    <link href="icecream.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="ConsumerTemplate">
+
+    
+      <tr>
+          <td>Contanier</td>
+        <td>{{Contanier}}</td>
+       </tr>
+
+       <tr>
+        <td>Flovour</td>
+        <td>{{Flovour}}</td>
+         </tr>
+       
+
+             <tr>
+                    <td>TotalAmount</td>
+                  <td>{{TotalAmount}}</td>
+                 </tr>
+        
+  </script>
+
+</head>
+
+<body>
+    <h1>Ice Cream store</h1>
+    <div class="col-9"> Select the Flovour of an Icecream:
+            <input type="radio" name="icecreamS" id="IceCreamTypeRadio" value="Strawberry">Strawberry
+            <input type="radio" name="icecreamV" id="IceCreamTypeRadio" value="vanilla">vanilla
+            <input type="radio" name="icecreamC" id="IceCreamTypeRadio" value="Chocolate">Chocolate
+          
+    </div>
+    <div class="col-9"> Select the type of a Cone you desire:
+            <input type="radio" name="icecreamP"  id="ConeTypeRadio" value="Plain Cone">Plain Cone
+            <input type="radio" name="icecreamS" id="ConeTypeRadio" value="Sugar Cone">Sugar Cone
+            <input type="radio" name="icecreamP" id="ConeTypeRadio" value="" >Paper Cup
+        </div>
+    </div>
+   
+    <div class="col-8">
+      <label class="contanier">Crumbed Peanut
+          <input type="checkbox">
+          <span class="checkmark"></span>
+
+      </label>
+
+      <label class="contanier">Caramal Dip
+            <input type="checkbox">
+            <span class="checkmark"></span>
+  
+        </label>
+
+
+      <label class="contanier">Chocolate Dip
+            <input type="checkbox">
+            <span class="checkmark"></span>
+  
+        </label>
+        <label class="contanier">Ories
+                <input type="checkbox">
+                <span class="checkmark"></span>
+      
+            </label>
+            <label class="contanier">Astros
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+          
+                </label>
+  
+    </div>
+    <div class="col-7">
+            <button id="addButton" type="button" name="Add" value="add">Submit</button>
+        </div>
+
+    <div class="col-6">
+        <table>
+            <div id="icecream">
+
+            </div>
+        </table>
+    </div>
+<script src="./icecreamLogic.js"></script>
+<script src="./icecream.js"></script>
+</body>
+
+</html>
